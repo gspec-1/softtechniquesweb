@@ -22,7 +22,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" onClick={closeMenu}>
-              <div className="w-[200px] h-[200px] rounded-full flex items-center justify-center -mt-2">
+              <div className="w-[200px] h-[200px] rounded-full flex items-center justify-center -mt-2 -ml-4">
                 <Image
                   src="/logo8.png"
                   alt="SoftTechniques Logo"
