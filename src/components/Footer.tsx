@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#645bb2] text-white relative overflow-hidden">
+    <footer className="bg-[#29473d] text-white relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse"></div>
@@ -161,7 +161,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/company/softtechniques/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white rounded-full flex items-center justify-center text-white hover:text-[#645bb2] hover:scale-110 hover:rotate-6 transition-all duration-300 backdrop-blur-sm"
+                  className="w-10 h-10 bg-white/10 hover:bg-white rounded-full flex items-center justify-center text-white hover:text-[#29473d] hover:scale-110 hover:rotate-6 transition-all duration-300 backdrop-blur-sm"
                   aria-label="LinkedIn"
                 >
                   <svg
@@ -176,7 +176,7 @@ export default function Footer() {
                   href="https://www.instagram.com/softtechniques"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white rounded-full flex items-center justify-center text-white hover:text-[#645bb2] hover:scale-110 hover:rotate-6 transition-all duration-300 backdrop-blur-sm"
+                  className="w-10 h-10 bg-white/10 hover:bg-white rounded-full flex items-center justify-center text-white hover:text-[#29473d] hover:scale-110 hover:rotate-6 transition-all duration-300 backdrop-blur-sm"
                   aria-label="Instagram"
                 >
                   <svg
@@ -191,7 +191,7 @@ export default function Footer() {
                   href="https://github.com/gspec-1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-white rounded-full flex items-center justify-center text-white hover:text-[#645bb2] hover:scale-110 hover:rotate-6 transition-all duration-300 backdrop-blur-sm"
+                  className="w-10 h-10 bg-white/10 hover:bg-white rounded-full flex items-center justify-center text-white hover:text-[#29473d] hover:scale-110 hover:rotate-6 transition-all duration-300 backdrop-blur-sm"
                   aria-label="GitHub"
                 >
                   <svg

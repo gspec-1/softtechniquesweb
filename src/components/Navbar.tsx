@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[9999] bg-[#645bb2] backdrop-blur-sm border-b-2 border-white/20 shadow-xl">
+    <nav className="fixed top-0 left-0 right-0 z-[9999] bg-[#29473d] backdrop-blur-sm border-b-2 border-white/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-18 lg:h-20 w-full">
           {/* Logo */}
@@ -73,13 +73,13 @@ export default function Navbar() {
           <div className="hidden md:flex items-center flex-shrink-0">
             <Link
               href="#about"
-              className="bg-white text-[#645bb2] px-4 py-1.5 rounded-full font-medium text-xs hover:bg-white/90 transition-colors"
+              className="bg-white text-[#29473d] px-4 py-1.5 rounded-full font-medium text-xs hover:bg-white/90 transition-colors"
             >
               Get Started
             </Link>
           </div>
 
-          {/* Mobile Menu Button - Only visible on small screens */}
+          {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
             className="block sm:block md:hidden lg:hidden xl:hidden 2xl:hidden flex flex-col items-center justify-center w-10 h-10 space-y-1 bg-white/20 rounded-lg hover:bg-white/30 transition-colors border border-white/30"
@@ -105,7 +105,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out bg-[#645bb2] ${
+          className={`md:hidden transition-all duration-300 ease-in-out bg-[#29473d] ${
             isMenuOpen
               ? "max-h-96 opacity-100 pb-4"
               : "max-h-0 opacity-0 overflow-hidden"
@@ -150,7 +150,7 @@ export default function Navbar() {
             <Link
               href="#about"
               onClick={closeMenu}
-              className="bg-white text-[#645bb2] px-6 py-3 rounded-full font-medium text-base hover:bg-white/90 transition-colors text-center mt-4"
+              className="bg-white text-[#29473d] px-6 py-3 rounded-full font-medium text-base hover:bg-white/90 transition-colors text-center mt-4"
             >
               Get Started
             </Link>
@@ -160,4 +160,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

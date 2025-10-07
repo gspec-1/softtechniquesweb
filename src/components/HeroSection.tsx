@@ -38,7 +38,7 @@ export default function HeroSection() {
   }, [isClient]);
 
   return (
-    <section className="relative min-h-screen bg-[#645bb2] overflow-hidden">
+    <section className="relative min-h-screen bg-[#29473d] overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
@@ -75,7 +75,7 @@ export default function HeroSection() {
             <div className="flex flex-wrap gap-4 pt-4 animate-fade-in-up" style={{ animationDelay: '400ms' }}>
               <Link
                 href="#services"
-                className="group bg-white text-[#645bb2] px-8 py-4 rounded-full font-bold text-base hover:bg-white/90 transition-all hover:scale-105 shadow-xl hover:shadow-2xl flex items-center gap-2"
+                className="group bg-white text-[#29473d] px-8 py-4 rounded-full font-bold text-base hover:bg-white/90 transition-all hover:scale-105 shadow-xl hover:shadow-2xl flex items-center gap-2"
               >
                 Explore Services
                 <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@ export default function HeroSection() {
               </Link>
               <Link
                 href="#contact"
-                className="group bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-base hover:bg-white hover:text-[#645bb2] transition-all hover:scale-105 shadow-lg flex items-center gap-2"
+                className="group bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-base hover:bg-white hover:text-[#29473d] transition-all hover:scale-105 shadow-lg flex items-center gap-2"
               >
                 Talk to Us
                 <svg className="w-5 h-5 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
