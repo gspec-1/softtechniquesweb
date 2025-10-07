@@ -16,13 +16,13 @@ export default function Footer() {
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1 animate-fade-in-up">
-            <div className="mb-6 -mt-[75px]">
+            <div className="mb-6 -mt-[100px]">
               <Image
-                src="/logo.png"
+                src="/logo8.png"
                 alt="SoftTechniques Logo"
                 width={1000}
                 height={1000}
-                className="w-[150px] h-[150px] object-contain rounded-full"
+                className="w-[200px] h-[200px] object-contain rounded-full"
               />
             </div>
             <p className="text-gray-300 leading-relaxed hover:text-white transition-colors duration-300">

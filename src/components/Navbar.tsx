@@ -22,18 +22,16 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" onClick={closeMenu}>
-              <Image
-                src="/logo.png"
-                alt="SoftTechniques Logo"
-                width={1000}
-                height={1000}
-                className="w-[150px] h-[150px] object-contain rounded-full relative"
-                style={{
-                  filter: 'drop-shadow(0 0 0 transparent)',
-                  clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 85%)'
-                }}
-                priority
-              />
+              <div className="w-[200px] h-[200px] rounded-full flex items-center justify-center -mt-2">
+                <Image
+                  src="/logo8.png"
+                  alt="SoftTechniques Logo"
+                  width={1000}
+                  height={1000}
+                  className="w-[200px] h-[200px] object-contain"
+                  priority
+                />
+              </div>
             </Link>
           </div>
 
