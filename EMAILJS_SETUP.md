@@ -76,3 +76,5 @@ const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your actual public key
 ## Security Note
 Never commit your actual EmailJS keys to version control. Consider using environment variables for production.
 
+
+

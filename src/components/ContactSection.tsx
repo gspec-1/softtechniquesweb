@@ -112,7 +112,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#645bb2] focus:border-transparent transition-all outline-none disabled:bg-gray-100 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29473d] focus:border-transparent transition-all outline-none disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
                 />
               </div>
 
@@ -132,7 +132,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#645bb2] focus:border-transparent transition-all outline-none disabled:bg-gray-100 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29473d] focus:border-transparent transition-all outline-none disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
                 />
               </div>
 
@@ -152,7 +152,7 @@ export default function ContactSection() {
                   required
                   rows={6}
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29473d] focus:border-transparent transition-all outline-none resize-none disabled:bg-gray-100 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#29473d] focus:border-transparent transition-all outline-none resize-none disabled:bg-gray-100 disabled:cursor-not-allowed text-gray-900"
                 />
               </div>
 
@@ -178,7 +178,7 @@ export default function ContactSection() {
                   href="mailto:hello@softtechniques.com"
                   className="text-[#29473d] hover:underline"
                 >
-                  hello@softtechniques.com
+                ask@softtechniques.com
                 </a>
                 .
               </p>
@@ -218,7 +218,7 @@ export default function ContactSection() {
                     href="mailto:hello@softtechniques.com"
                     className="text-[#29473d] hover:underline"
                   >
-                    hello@softtechniques.com
+                     ask@softtechniques.com
                   </a>
                 </p>
               </div>
