@@ -131,10 +131,24 @@ I'm your **AI Solutions Expert**! I specialize in transforming businesses with c
       }, 500);
     } catch (error) {
       console.error('Error:', error);
+      
+      // Determine error message based on error type
+      let errorContent = "Sorry, I encountered an error. Please try again or contact us directly at ask@softtechniques.com";
+      
+      if (error instanceof Error) {
+        if (error.message.includes('500')) {
+          errorContent = "The AI service is temporarily unavailable. Please try again in a few moments or contact us at ask@softtechniques.com";
+        } else if (error.message.includes('404')) {
+          errorContent = "The chat service endpoint was not found. Please contact us at ask@softtechniques.com";
+        } else if (error.message.includes('network') || error.message.includes('fetch')) {
+          errorContent = "Network connection issue. Please check your internet connection and try again.";
+        }
+      }
+      
       const errorMessage = {
         id: (Date.now() + 1).toString(),
         type: 'assistant' as const,
-        content: "Sorry, I encountered an error. Please try again or contact us directly at ask@softtechniques.com",
+        content: errorContent,
         isTyping: true
       };
       setMessages(prev => [...prev, errorMessage]);

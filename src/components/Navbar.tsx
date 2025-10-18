@@ -3,11 +3,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { useChat } from "./ChatProvider";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { setChatOpen } = useChat();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,11 +13,6 @@ export default function Navbar() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-  };
-
-  const handleContactClick = () => {
-    setChatOpen(true);
-    closeMenu(); // Close mobile menu if open
   };
 
   return (
@@ -68,12 +61,12 @@ export default function Navbar() {
             >
               Case Studies
             </Link>
-            <button
-              onClick={handleContactClick}
+            <Link
+              href="#contact"
               className="text-white/90 hover:text-white transition-colors text-xs font-medium"
             >
               Contact
-            </button>
+            </Link>
           </div>
 
           {/* Desktop CTA Button */}
@@ -147,12 +140,13 @@ export default function Navbar() {
             >
               Case Studies
             </Link>
-            <button
-              onClick={handleContactClick}
-              className="text-white/90 hover:text-white transition-colors text-base font-medium py-2 text-left"
+            <Link
+              href="#contact"
+              onClick={closeMenu}
+              className="text-white/90 hover:text-white transition-colors text-base font-medium py-2"
             >
               Contact
-            </button>
+            </Link>
             <Link
               href="#about"
               onClick={closeMenu}
